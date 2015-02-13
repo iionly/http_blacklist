@@ -1,6 +1,6 @@
-http:blacklist for Elgg 1.9
-Latest Version: 1.9.2
-Released: 2014-05-22
+http:blacklist for Elgg 1.10
+Latest Version: 1.10.2
+Released: 2015-02-13
 Contact: iionly@gmx.de
 License: GNU General Public License version 2
 Copyright: (c) iionly
@@ -21,6 +21,11 @@ Installation:
 
 
 Changelog:
+
+1.10.2:
+
+- Updated for Elgg 1.10,
+- Fix of deprecation issues occuring on Elgg 1.10 (namely changing output/confirmlink view to output/url view).
 
 1.9.2:
 

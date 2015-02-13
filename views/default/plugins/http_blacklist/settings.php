@@ -5,7 +5,7 @@ $plugin = elgg_extract("entity", $vars);
 if (!$plugin->counter) {
 	$plugin->counter = 0;
 }
-$counter_reset = elgg_view("output/confirmlink", array('href' => elgg_get_site_url() . "action/http_blacklist/reset",
+$counter_reset = elgg_view("output/url", array('href' => elgg_get_site_url() . "action/http_blacklist/reset",
 					'text' => elgg_echo('http_blacklist:reset'),
 					'confirm' => elgg_echo('http_blacklist:resetconfirm'),
 					'class' => 'elgg-button elgg-button-action'
