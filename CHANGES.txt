@@ -1,0 +1,34 @@
+Changelog
+=========
+
+1.10.3
+------
+
+- Tested to make sure that it works on Elgg 2.0 (that means it should also work on any future Elgg 2.X version),
+- composer.json added.
+
+1.10.2
+------
+
+- Updated for Elgg 1.10,
+- Fix of deprecation issues occuring on Elgg 1.10 (namely changing output/confirmlink view to output/url view).
+
+1.9.2
+-----
+
+- Separate release for Elgg 1.9 to fix BC-breaking issue in 'route' plugin hook ($return['handler'] is now $return['identifier']).
+
+1.8.2
+-----
+
+- Separation of plugin releases for Elgg 1.8 and Elgg 1.9 due to BC-breaking changes in 'route' plugin hook introduced in Elgg 1.9. For the Elgg 1.8 version there's no changes in the code but only this README file is updated.
+
+1.8.1
+-----
+
+- Counter for number of blocked/redirected page accesses added. Counter is displayed on http:blacklist plugin settings page and can be reset.
+
+1.8.0
+-----
+
+- Initial release for Elgg 1.8 and 1.9.
