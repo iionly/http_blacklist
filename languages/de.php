@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 	'http_blacklist:httpblkey' => 'Gebe Deinen Project Honey Pot API-Key ein: ',
 	'http_blacklist:httpblkey:description' => '(Registriere einen (kostenlosen) Account auf http://www.projecthoneypot.org/ und erzeuge Deinen persönlichen API-Key)',
 	'http_blacklist:httpblmaxdays' => 'Zeitintervall während dem in der Blacklist enthaltene IPs geblockt/umgeleitet werden sollen: ',
@@ -12,5 +12,6 @@ return array(
 	'http_blacklist:counter' => 'Geblockte oder umgeleitete Zugriffe: ',
 	'http_blacklist:counter:description' => '(Der Zähler zeigt an, wie viele Zugriffe auf die login-, register- und forgotpassword-Seiten geblockt oder umgeleitet wurden, weil die IP des Besuchers in der Blacklist enthalten ist)',
 	'http_blacklist:reset' => 'Zähler zurücksetzen',
-	'http_blacklist:resetconfirm' => 'Möchtest Du den Zähler wirklich auf null zurücksetzen?'
-);
+	'http_blacklist:resetconfirm' => 'Möchtest Du den Zähler wirklich auf null zurücksetzen?',
+	'http_blacklist:success_reset' => 'Der Zähler wurde zurückgesetzt.',
+];

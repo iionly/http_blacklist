@@ -14,11 +14,10 @@ elgg_register_event_handler('init', 'system', 'http_blacklist_init');
 function http_blacklist_init() {
 
 	if(!elgg_is_logged_in() && elgg_get_plugin_setting("httpblkey", "http_blacklist")) {
-
 		elgg_register_plugin_hook_handler('route', 'all', 'http_blacklist_router');
 	}
 
-	elgg_register_action('http_blacklist/reset', elgg_get_plugins_path() . 'http_blacklist/actions/http_blacklist/reset.php', 'admin');
+	elgg_register_action('http_blacklist/reset', dirname(__FILE__) . '/actions/http_blacklist/reset.php', 'admin');
 }
 
 function http_blacklist_router($hook, $type, $return, $params) {
@@ -31,11 +30,11 @@ function http_blacklist_router($hook, $type, $return, $params) {
 	 */
 
 	// Which pages to block access to? Currently hard-coded...
-    $protect_uris = array('register', 'forgotpassword', 'login');
+    $protect_uris = ['register', 'forgotpassword', 'login'];
 
 	// Reconstruct URI
 	if (is_array($return['segments'])) {
-		$parts = array_merge(array($return['identifier']), $return['segments']);
+		$parts = array_merge([$return['identifier']], $return['segments']);
 		$uri = implode('/', $parts);
 	} else {
 		$uri = $return['identifier'];

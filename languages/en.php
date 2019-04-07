@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 	'http_blacklist:httpblkey' => 'Enter your Project Honey Pot API key: ',
 	'http_blacklist:httpblkey:description' => '(Register a free account at http://www.projecthoneypot.org/ and create your personal API key)',
 	'http_blacklist:httpblmaxdays' => 'Period in days to block/redirect blacklisted IPs: ',
@@ -12,5 +12,6 @@ return array(
 	'http_blacklist:counter' => 'Number of accesses blocked or redirected: ',
 	'http_blacklist:counter:description' => '(The counter shows the number of times an access to the login, register or forgotpassword pages was blocked or redirected due to a blacklist entry of the visitor)',
 	'http_blacklist:reset' => 'Reset counter',
-	'http_blacklist:resetconfirm' => 'Do you really want to reset the counter to zero?'
-);
+	'http_blacklist:resetconfirm' => 'Do you really want to reset the counter to zero?',
+	'http_blacklist:success_reset' => 'The counter was reset.',
+];
