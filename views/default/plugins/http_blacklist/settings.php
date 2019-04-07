@@ -2,18 +2,6 @@
 
 $plugin = elgg_extract("entity", $vars);
 
-if (!$plugin->counter) {
-	$plugin->counter = 0;
-}
-
-if (!$plugin->httpblmaxdays) {
-	$plugin->httpblmaxdays = 21;
-}
-
-if (!$plugin->httpblmaxthreat) {
-	$plugin->httpblmaxthreat = 25;
-}
-
 $counter_reset = elgg_view("output/url", [
 	'href' => elgg_get_site_url() . "action/http_blacklist/reset",
 	'text' => elgg_echo('http_blacklist:reset'),
