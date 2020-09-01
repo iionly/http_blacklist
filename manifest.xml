@@ -3,7 +3,7 @@
 	<name>http:blacklist</name>
 	<id>http_blacklist</id>
 	<author>iionly</author>
-	<version>3.0.0</version>
+	<version>3.3.0</version>
 	<category>security</category>
 	<description>Block malicious IP addresses (and the people behind them) from accessing your site or redirect them to your honeypot site.</description>
 	<website>https://github.com/iionly</website>
@@ -11,6 +11,6 @@
 	<license>GNU General Public License version 2</license>
 	<requires>
 		<type>elgg_release</type>
-		<version>3.0.0</version>
+		<version>3.3.0</version>
 	</requires>
 </plugin_manifest>

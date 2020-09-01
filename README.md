@@ -1,8 +1,8 @@
-http:blacklist for Elgg 3.0 and newer Elgg 3.X
+http:blacklist for Elgg 3.3 and newer Elgg 3.X
 ==============================================
 
-Latest Version: 3.0.0  
-Released: 2019-06-07  
+Latest Version: 3.3.0  
+Released: 2020-08-29  
 Contact: iionly@gmx.de  
 License: GNU General Public License version 2  
 Copyright: (c) iionly
